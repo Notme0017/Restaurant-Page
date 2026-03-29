@@ -1,0 +1,127 @@
+/* Custom Fonts - You can add Google Fonts links in your HTML for better results */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+:root {
+    --honey-light: #ffeb3b;
+    --honey-main: #fbc02d;
+    --honey-dark: #f57f17;
+    --wood-brown: #5d4037;
+    --card-bg: rgba(255, 255, 255, 0.9);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+    /* Honeycomb pattern background */
+    background-color: #fbc02d;
+    background-image: url("https://www.transparenttextures.com/patterns/honey-comb.png");
+    color: var(--wood-brown);
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    backdrop-filter: blur(5px);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    background-color: var(--honey-main);
+    border: 3px solid var(--wood-brown);
+    border-radius: 50px; /* Pill shape */
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--wood-brown);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 0 var(--wood-brown);
+}
+
+button:hover {
+    background-color: var(--honey-light);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 var(--wood-brown);
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 var(--wood-brown);
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 30px;
+}
+
+/* The Main Card Style */
+.card {
+    background-color: var(--card-bg);
+    border: 8px solid var(--honey-main);
+    border-radius: 40px; /* Large rounded corners like the image */
+    padding: 30px;
+    width: 90%;
+    max-width: 700px;
+    box-sizing: border-box;
+    box-shadow: 8px 8px 0 rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Specific styling for page titles (like "Menu") */
+.title-card {
+    background-color: var(--honey-main);
+    border-color: var(--wood-brown);
+}
+
+.title-card h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: var(--wood-brown);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: var(--honey-dark);
+    border-bottom: 3px solid var(--honey-main);
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(251, 192, 45, 0.1);
+    border-radius: 20px;
+}
+
+.menu-item strong {
+    font-size: 1.3rem;
+    display: block;
+    color: var(--wood-brown);
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+#days p {
+    margin: 5px 0;
+    font-weight: bold;
+}
